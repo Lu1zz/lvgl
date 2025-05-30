@@ -111,7 +111,7 @@ static void lv_gif_constructor(const lv_obj_class_t * class_p, lv_obj_t * obj)
 
     lv_gif_t * gifobj = (lv_gif_t *) obj;
 
-    gifobj->timer = lv_timer_create(next_frame_task_cb, 5, obj);
+    gifobj->timer = lv_timer_create(next_frame_task_cb, 10, obj);
     lv_timer_pause(gifobj->timer);
 }
 
